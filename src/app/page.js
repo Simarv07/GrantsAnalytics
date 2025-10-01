@@ -33,10 +33,10 @@ export default function Home() {
   }, []);
 
   const StatCard = ({ title, value, icon, color = '#6366f1' }) => (
-    <div className="group h-full transform rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md">
+    <div className="group h-full transform rounded-xl border border-slate-200 bg-white p-3 text-center shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md active:scale-95 sm:rounded-2xl sm:p-4">
       <div className="mb-2 flex justify-center" style={{ color }}>{icon}</div>
-      <div className="mb-1 text-2xl font-bold" style={{ color }}>{value}</div>
-      <div className="text-sm font-medium text-slate-600">{title}</div>
+      <div className="mb-1 text-xl font-bold sm:text-2xl" style={{ color }}>{value}</div>
+      <div className="text-xs font-medium text-slate-600 sm:text-sm">{title}</div>
     </div>
   );
 
@@ -44,26 +44,26 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
       <header className="shadow-sm">
         <div className="bg-gradient-to-r from-indigo-500 to-violet-600">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-4 sm:py-4">
             <div className="flex items-center gap-2">
-              <span className="text-xl">📊</span>
-              <h1 className="text-lg font-bold text-white">Grants Reporting Dashboard</h1>
+              <span className="text-lg sm:text-xl">📊</span>
+              <h1 className="text-base font-bold text-white sm:text-lg">Grants Reporting Dashboard</h1>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="mx-auto max-w-7xl px-4 py-8">
+      <main className="mx-auto max-w-7xl px-3 py-6 sm:px-4 sm:py-8">
         <section className="mb-10">
-          <h2 className="mb-5 bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-center text-4xl font-bold text-transparent md:text-5xl py-2">
+          <h2 className="mb-4 bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-center text-2xl font-bold text-transparent sm:text-3xl md:text-4xl lg:text-5xl py-2">
             Government Grants Analytics
           </h2>
-          <p className="mx-auto mb-6 max-w-3xl text-center text-slate-600">
+          <p className="mx-auto mb-6 max-w-3xl text-center text-sm text-slate-600 sm:text-base">
             Comprehensive insights into government grant distribution, recipient analysis, and funding patterns across Canada from 2024 to 2025.
           </p>
 
           {summaryStats && (
-            <div className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4">
+            <div className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               <StatCard
                 title="Total Grants Awarded"
                 value={summaryStats.totalGrants.toLocaleString()}
@@ -98,8 +98,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <section className="flex flex-col gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
             <RecipientTypeReport />
             <ProvinceReport />
           </div>
@@ -111,8 +111,8 @@ export default function Home() {
       </main>
 
       <footer>
-        <div className="mx-auto max-w-7xl px-4 py-8">
-          <p className="text-center text-slate-600">Data retrieved from the Federal Grants and Contributions dataset.</p>
+        <div className="mx-auto max-w-7xl px-3 py-6 sm:px-4 sm:py-8">
+          <p className="text-center text-xs text-slate-600 sm:text-sm">Data retrieved from the Federal Grants and Contributions dataset.</p>
         </div>
       </footer>
     </div>
