@@ -25,7 +25,6 @@ const ProvinceReport = () => {
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-400 to-teal-400" />
 
       <div className="mb-3 flex items-center gap-2 sm:mb-4">
-        <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-emerald-50 text-emerald-600 sm:h-7 sm:w-7">📍</span>
         <h2 className="text-lg font-bold text-slate-900 sm:text-xl">Grants Distribution by Province</h2>
       </div>
 
@@ -51,7 +50,6 @@ const ProvinceReport = () => {
 
       <div className="mt-4 sm:mt-6">
         <div className="mb-2 flex items-center gap-2">
-          <span className="inline-flex h-5 w-5 items-center justify-center rounded bg-emerald-50 text-emerald-600 sm:h-6 sm:w-6">📈</span>
           <h3 className="text-base font-semibold text-slate-900 sm:text-lg">Geographic Insights</h3>
         </div>
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 sm:gap-3">

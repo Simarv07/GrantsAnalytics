@@ -21,7 +21,6 @@ const TopRecipientsReport = () => {
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-teal-400 to-emerald-600" />
 
       <div className="mb-3 flex items-center gap-2 sm:mb-4">
-        <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-sky-50 text-sky-600 sm:h-7 sm:w-7">🏢</span>
         <h2 className="text-lg font-bold text-slate-900 sm:text-xl">Top Grant Recipients</h2>
       </div>
 
@@ -86,7 +85,6 @@ const TopRecipientsReport = () => {
 
       <div className="mt-4 sm:mt-6">
         <div className="mb-2 flex items-center gap-2">
-          <span className="inline-flex h-5 w-5 items-center justify-center rounded bg-sky-50 text-sky-600 sm:h-6 sm:w-6">📈</span>
           <h3 className="text-base font-semibold text-slate-900 sm:text-lg">Key Insights</h3>
         </div>
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 sm:gap-3">
