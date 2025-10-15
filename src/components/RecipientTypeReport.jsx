@@ -36,7 +36,6 @@ const RecipientTypeReport = () => {
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-400 to-violet-500" />
 
       <div className="mb-3 flex items-center gap-2 sm:mb-4">
-        <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-indigo-50 text-indigo-600 sm:h-7 sm:w-7">🏢</span>
         <h2 className="text-lg font-bold text-slate-900 sm:text-xl">Funding Distribution by Recipient Type</h2>
       </div>
 
@@ -62,7 +61,6 @@ const RecipientTypeReport = () => {
 
       <div className="mt-4 sm:mt-6">
         <div className="mb-2 flex items-center gap-2">
-          <span className="inline-flex h-5 w-5 items-center justify-center rounded bg-indigo-50 text-indigo-600 sm:h-6 sm:w-6">📈</span>
           <h3 className="text-base font-semibold text-slate-900 sm:text-lg">Key Insights</h3>
         </div>
         <div className="flex flex-col gap-2 sm:gap-3">

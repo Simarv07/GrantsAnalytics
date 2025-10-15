@@ -46,7 +46,6 @@ export default function Home() {
         <div className="bg-gradient-to-r from-indigo-500 to-violet-600">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-3 sm:px-4 sm:py-4">
             <div className="flex items-center gap-2">
-              <span className="text-lg sm:text-xl">📊</span>
               <h1 className="text-base font-bold text-white sm:text-lg">Grants Reporting Dashboard</h1>
             </div>
           </div>
@@ -67,25 +66,25 @@ export default function Home() {
               <StatCard
                 title="Total Grants Awarded"
                 value={summaryStats.totalGrants.toLocaleString()}
-                icon={<span className="text-3xl">🧮</span>}
+                icon={null}
                 color="#6366f1"
               />
               <StatCard
                 title="Total Funding"
                 value={`$${(summaryStats.totalAmount / 1000000).toFixed(1)}M`}
-                icon={<span className="text-3xl">📈</span>}
+                icon={null}
                 color="#10b981"
               />
               <StatCard
                 title="Average Grant Size"
                 value={`$${(summaryStats.avgGrantSize / 1000).toFixed(0)}K`}
-                icon={<span className="text-3xl">🏢</span>}
+                icon={null}
                 color="#ef4444"
               />
               <StatCard
                 title="Top Province"
                 value={summaryStats.topProvince}
-                icon={<span className="text-3xl">📍</span>}
+                icon={null}
                 color="#14b8a6"
               />
             </div>

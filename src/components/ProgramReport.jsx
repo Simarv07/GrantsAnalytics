@@ -62,7 +62,6 @@ const ProgramReport = () => {
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-rose-400 to-amber-400" />
 
       <div className="mb-3 flex items-center gap-2 sm:mb-4">
-        <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-amber-50 text-amber-600 sm:h-7 sm:w-7">📊</span>
         <h2 className="text-lg font-bold text-slate-900 sm:text-xl">Grants Distribution by Program</h2>
       </div>
 
@@ -112,7 +111,6 @@ const ProgramReport = () => {
 
       <div className="mt-4 sm:mt-6">
         <div className="mb-2 flex items-center gap-2">
-          <span className="inline-flex h-5 w-5 items-center justify-center rounded bg-amber-50 text-amber-600 sm:h-6 sm:w-6">📈</span>
           <h3 className="text-base font-semibold text-slate-900 sm:text-lg">Program Analysis</h3>
         </div>
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4 sm:gap-3">
